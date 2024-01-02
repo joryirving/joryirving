@@ -1,16 +1,12 @@
-### Hi there 👋
+<p align="center">
+  <samp>
+    <a href="https://www.instagram.com/lildrunkensmurf/">instagram</a> .
+    <a href="https://www.linkedin.com/in/joryirving/">linkedin</a> .
+    <a href="https://github.com/LilDrunkenSmurf/k3s-home-cluster">k8s@home</a>
+  </samp>
+</p>
 
-<!--
-**LilDrunkenSmurf/LilDrunkenSmurf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### SRE with imposter syndrome 💻
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
