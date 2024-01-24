@@ -16,11 +16,12 @@ jobs:
           access_token: ${{ secrets.BW_ACCESS_TOKEN }}
           secrets: |
             c2b27b3e-6e77-4af0-bdfa-b10100563aa1 > WAKATIME_API_KEY
+            feedd63c-a42e-4b60-921e-b101005761e8 > GH_TOKEN
 
       - uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ env.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ env.GH_TOKEN }}
           SHOW_PROJECTS: true
           SHOW_LINES_OF_CODE: false
           SHOW_PROFILE_VIEWS: false
