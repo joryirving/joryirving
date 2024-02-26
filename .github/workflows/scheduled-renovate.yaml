@@ -49,7 +49,7 @@ jobs:
           LOG_LEVEL: ${{ inputs.logLevel || 'debug' }}
           RENOVATE_DRY_RUN: ${{ inputs.dryRun == true }}
           RENOVATE_AUTODISCOVER: true
-          RENOVATE_AUTODISCOVER_FILTER: "lildrunkensmurf/*"
+          RENOVATE_AUTODISCOVER_FILTER: "joryirving/*"
           RENOVATE_PLATFORM: "github"
           RENOVATE_PLATFORM_COMMIT: "true"
         with:
