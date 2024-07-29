@@ -2,7 +2,7 @@
   <samp>
     <a href="https://www.instagram.com/lildrunkensmurf/">instagram</a> .
     <a href="https://www.linkedin.com/in/joryirving/">linkedin</a> .
-    <a href="https://github.com/joryirving/k3s-home-cluster">k8s@home</a>
+    <a href="https://github.com/joryirving/home-ops">k8s@home</a>
   </samp>
 </p>
 
