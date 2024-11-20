@@ -11,12 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get Secrets
-        uses: bitwarden/sm-action@v2
+        uses: 1password/load-secrets-action@v2
         with:
-          access_token: ${{ secrets.BW_ACCESS_TOKEN }}
-          secrets: |
-            c2b27b3e-6e77-4af0-bdfa-b10100563aa1 > WAKATIME_API_KEY
-            feedd63c-a42e-4b60-921e-b101005761e8 > GH_TOKEN
+          export-env: true
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.ONEPASS_SA_TOKEN }}
+          BOT_APP_ID: op://Kubernetes/github-bot/BOT_APP_ID
+          BOT_APP_PRIVATE_KEY: op://Kubernetes/github-bot/BOT_APP_PRIVATE_KEY
 
       - uses: anmol098/waka-readme-stats@master
         with:
