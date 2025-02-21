@@ -20,8 +20,8 @@ jobs:
         with:
           export-env: true
         env:
-          BOT_APP_ID: op://Kubernetes/github-bot/BOT_APP_ID
-          BOT_APP_PRIVATE_KEY: op://Kubernetes/github-bot/BOT_APP_PRIVATE_KEY
+          WAKATIME_API_KEY: op://Kubernetes/wakatime/WAKATIME_API_KEY
+          GH_TOKEN: op://Kubernetes/wakatime/GH_TOKEN
 
       - uses: anmol098/waka-readme-stats@master
         with:
