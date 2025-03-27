@@ -9,3 +9,5 @@
 <h1 align="center">
   SRE 💻
 </h1>
+
+![](https://github-readme-stats.vercel.app/api?username=joryirving&show_icons=true&hide_title=true&theme=one_dark_pro&count_private=true&hide=stars)
