@@ -1,0 +1,18 @@
+baseURL = 'https://www.jory.dev/'
+languageCode = 'en-us'
+
+title = 'Jory Irving'
+
+enableEmoji = true
+
+[params.author]
+name = "Jory Irving"
+headline = "SRE 💻"
+links = [
+    { flickr = "jory@jory.dev" },
+    { instagram = "https://www.instagram.com/lildrunkensmurf/" },
+    { linkedin = "https://www.linkedin.com/in/joryirving/" },
+    { gitlab = { href = "/metrics", text = "Metrics", icon = "github" } },
+    { steam = { href = "/resume/cv.pdf", text = "Resume", icon = "dev" } },
+    { github = { href = "https://github.com/joryirving/home-ops", text = "Homelab" } }
+]
