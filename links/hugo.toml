@@ -9,7 +9,7 @@ enableEmoji = true
 name = "Jory Irving"
 headline = "SRE 💻"
 links = [
-    { flickr = "jory@jory.dev" },
+    { email = "jory@jory.dev" },
     { instagram = "https://www.instagram.com/lildrunkensmurf/" },
     { linkedin = "https://www.linkedin.com/in/joryirving/" },
     { gitlab = { href = "/metrics", text = "Metrics", icon = "github" } },
