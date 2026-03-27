@@ -13,5 +13,5 @@
 </h1>
 
 <p align="center">
-  <img src=".stats/stats.svg" />
+  <img src="./stats/stats.svg" />
 </p>
