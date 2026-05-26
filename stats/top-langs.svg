@@ -198,7 +198,7 @@
     <g class="stagger" style="animation-delay: 600ms">
       <circle cx="5" cy="6" r="5" fill="#292929" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        JSON 16.00%
+        JSON 15.99%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
