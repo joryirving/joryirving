@@ -86,22 +86,31 @@ Styled, responsive, dark-themed HTML resume served at `/resume`, built from
 (unchanged). Sections, from the existing PDF content:
 
 - **Summary** — generalist IT + SRE/DevOps, 15+ years, DevOps fundamentals.
-- **Experience** — Tempo Software, Blacksquare.io, ColdBore Technology,
-  Brightside by ATB, Parkland Fuel, Talisman Energy (titles, dates, bullet
-  highlights as in the PDF).
+- **Experience** — StackAdapt (current), Tempo Software, Blacksquare.io,
+  ColdBore Technology, Brightside by ATB, Parkland Fuel, Talisman Energy (titles,
+  dates, bullet highlights). StackAdapt and Tempo dates per the "current role"
+  resolution below; earlier roles as in the PDF.
 - **Skills** — AWS, CI/CD, GitOps, Flux/ArgoCD, Terraform, Kubernetes, Docker,
   Linux, Windows, Agile, Time Management.
 - **Languages** — English; Basic French (read/spoken).
 - **Education** — SAIT, Computer Engineering Technologist Diploma (2006–2007).
 
-### ⚠️ Open item — current role
+### Current role — resolved
 
-The PDF lists **Tempo Software (Oct 2022 – PRESENT)** as the current role, but the
-owner's email is `@stackadapt.com`, so the PDF is out of date. The HTML resume must
-reflect the correct current employer. **Action:** before building the resume page,
-get the StackAdapt role title + start date (and Tempo end date). Until provided,
-insert a clearly-marked `TODO: confirm current role` placeholder in
-`links/data/resume.yaml` — do not silently ship the stale Tempo-as-present data.
+The PDF was out of date (listed Tempo as present). Corrected:
+
+- **StackAdapt — DevOps Engineer, May 2025 – Present.** Highlights:
+  - Rolled out metadata-labelling standardization across Kubernetes infrastructure,
+    enabling dynamic owner-based service alert routing.
+  - Improved Observability-stack reliability: migrated Grafana and Grafana OnCall
+    backends from SQLite to Postgres and enabled Grafana high-availability mode.
+  - Rolled out Gatus plus accompanying Prometheus alerts for endpoint monitoring and
+    fast feedback to critical service teams.
+- **Tempo Software — DevOps/SRE, October 2022 – April 2025** (end date inferred from
+  StackAdapt start; confirm during resume review). No longer the current role.
+
+Optional enrichment: if a role reads thin in the rendered resume, pull a couple more
+specifics from Jira/Slack via MCP, *targeted* at that role — not a broad data sweep.
 
 ## Tech details
 
