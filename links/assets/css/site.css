@@ -34,7 +34,7 @@ img { max-width: 100%; height: auto; display: block; }
 .lede { font-size: clamp(1.15rem, 1rem + .8vw, 1.6rem); color: var(--text); }
 
 /* ---- Hero ---- */
-.hero { position: relative; min-height: 100svh; display: grid; place-items: center; overflow: hidden; text-align: center; }
+.hero { position: relative; min-height: 100svh; display: grid; grid-template-columns: minmax(0, 1fr); place-items: center; overflow: hidden; text-align: center; }
 .hero__bg {
   position: absolute; inset: -20% -20% -20% -20%;
   background:
@@ -44,10 +44,10 @@ img { max-width: 100%; height: auto; display: block; }
   animation: drift 18s var(--ease) infinite alternate;
 }
 @keyframes drift { to { transform: translate3d(4%, -3%, 0) scale(1.08); } }
-.hero__inner { position: relative; z-index: 1; padding: 1rem; }
+.hero__inner { position: relative; z-index: 1; padding: 1rem; max-width: 100%; }
 .eyebrow { text-transform: uppercase; letter-spacing: .28em; font-size: .8rem; color: var(--muted); margin: 0 0 1rem; }
 .hero__title {
-  font-size: clamp(3rem, 2rem + 10vw, 8rem); font-weight: 900; letter-spacing: -.03em;
+  font-size: clamp(2.75rem, 1.5rem + 8vw, 8rem); font-weight: 900; letter-spacing: -.03em; max-width: 100%; overflow-wrap: break-word;
   line-height: .95; margin: 0;
   background: linear-gradient(120deg, var(--text), var(--accent) 60%, var(--accent-2));
   -webkit-background-clip: text; background-clip: text; color: transparent;
