@@ -76,3 +76,21 @@ img { max-width: 100%; height: auto; display: block; }
 .links a { color: var(--text); text-decoration: none; font-weight: 600; padding-bottom: 2px; border-bottom: 2px solid transparent; transition: border-color .2s var(--ease), color .2s var(--ease); }
 .links a:hover { color: var(--accent); border-color: var(--accent); }
 .colophon { color: var(--muted); font-size: .85rem; margin-top: 2.5rem; }
+
+/* ---- Scroll reveal ---- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity .7s var(--ease), transform .7s var(--ease);
+  transition-delay: var(--delay, 0s);
+  will-change: opacity, transform;
+}
+[data-reveal].is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .hero__bg, .scroll-cue span { animation: none !important; }
+}
+
+/* No-JS fallback: if JS never runs, reveal everything. */
+.no-js [data-reveal] { opacity: 1; transform: none; }

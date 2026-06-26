@@ -12,3 +12,9 @@
 <meta property="og:title" content="{{ .Site.Title }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}" />
+{{- if .IsHome -}}
+{{- $lenis := resources.Get "js/vendor/lenis.min.js" | fingerprint -}}
+{{- $main := resources.Get "js/main.js" | minify | fingerprint -}}
+<script src="{{ $lenis.RelPermalink }}" integrity="{{ $lenis.Data.Integrity }}" defer></script>
+<script src="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}" defer></script>
+{{- end -}}
