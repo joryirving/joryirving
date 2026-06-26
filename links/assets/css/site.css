@@ -1,0 +1,78 @@
+/* ---- Lenis (smooth scroll) recommended base ---- */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* ---- Tokens (one_dark_pro-aligned dark theme) ---- */
+:root {
+  --bg: #0b0e14;
+  --panel: #11151d;
+  --text: #e6edf3;
+  --muted: #8b94a3;
+  --accent: #61afef;
+  --accent-2: #c678dd;
+  --maxw: 60rem;
+  --ease: cubic-bezier(.2,.7,.2,1);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 clamp(1rem, .9rem + .4vw, 1.15rem)/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+img { max-width: 100%; height: auto; display: block; }
+.wrap { width: min(var(--maxw), 92vw); margin-inline: auto; }
+.section { padding: clamp(4rem, 12vh, 9rem) 0; }
+.section__title {
+  font-size: clamp(1.6rem, 1.2rem + 2vw, 2.6rem);
+  font-weight: 800; letter-spacing: -.02em; margin: 0 0 1.5rem;
+}
+.lede { font-size: clamp(1.15rem, 1rem + .8vw, 1.6rem); color: var(--text); }
+
+/* ---- Hero ---- */
+.hero { position: relative; min-height: 100svh; display: grid; place-items: center; overflow: hidden; text-align: center; }
+.hero__bg {
+  position: absolute; inset: -20% -20% -20% -20%;
+  background:
+    radial-gradient(40% 40% at 30% 30%, color-mix(in oklab, var(--accent) 40%, transparent), transparent 70%),
+    radial-gradient(40% 40% at 70% 60%, color-mix(in oklab, var(--accent-2) 38%, transparent), transparent 70%);
+  filter: blur(40px); opacity: .55;
+  animation: drift 18s var(--ease) infinite alternate;
+}
+@keyframes drift { to { transform: translate3d(4%, -3%, 0) scale(1.08); } }
+.hero__inner { position: relative; z-index: 1; padding: 1rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: .28em; font-size: .8rem; color: var(--muted); margin: 0 0 1rem; }
+.hero__title {
+  font-size: clamp(3rem, 2rem + 10vw, 8rem); font-weight: 900; letter-spacing: -.03em;
+  line-height: .95; margin: 0;
+  background: linear-gradient(120deg, var(--text), var(--accent) 60%, var(--accent-2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.hero__tagline { color: var(--muted); font-size: clamp(1.1rem, 1rem + .8vw, 1.6rem); margin: 1.25rem auto 0; max-width: 36ch; }
+.scroll-cue { display: inline-block; margin-top: 2.5rem; width: 26px; height: 42px; border: 2px solid var(--muted); border-radius: 14px; position: relative; }
+.scroll-cue span { position: absolute; left: 50%; top: 8px; width: 4px; height: 8px; margin-left: -2px; border-radius: 2px; background: var(--text); animation: cue 1.6s var(--ease) infinite; }
+@keyframes cue { 0%{opacity:0;transform:translateY(0)} 30%{opacity:1} 100%{opacity:0;transform:translateY(14px)} }
+
+/* ---- Skills ---- */
+.skills-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); }
+.skill { background: var(--panel); border: 1px solid color-mix(in oklab, var(--text) 10%, transparent); border-radius: .75rem; padding: 1rem 1.1rem; font-weight: 600; }
+
+/* ---- Cards ---- */
+.cards { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+@media (min-width: 48rem) { .cards { grid-template-columns: 1fr 1fr; } }
+.card { background: var(--panel); border: 1px solid color-mix(in oklab, var(--text) 10%, transparent); border-radius: 1rem; padding: 1.5rem; text-decoration: none; transition: transform .3s var(--ease), border-color .3s var(--ease); }
+.card:hover { transform: translateY(-4px); border-color: color-mix(in oklab, var(--accent) 50%, transparent); }
+.card h3 { margin: 0 0 .5rem; font-size: 1.4rem; }
+.card p { color: var(--muted); margin: 0 0 1rem; }
+.card__cta { color: var(--accent); font-weight: 600; }
+
+/* ---- Contact ---- */
+.section--contact { border-top: 1px solid color-mix(in oklab, var(--text) 8%, transparent); }
+.links { display: flex; flex-wrap: wrap; gap: 1rem 1.75rem; }
+.links a { color: var(--text); text-decoration: none; font-weight: 600; padding-bottom: 2px; border-bottom: 2px solid transparent; transition: border-color .2s var(--ease), color .2s var(--ease); }
+.links a:hover { color: var(--accent); border-color: var(--accent); }
+.colophon { color: var(--muted); font-size: .85rem; margin-top: 2.5rem; }
