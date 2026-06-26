@@ -1,6 +1,12 @@
 baseURL = 'https://www.jory.dev/'
 languageCode = 'en-us'
 
+[author]
+  name = "Jory Irving"
+
+[security]
+  allowContent = ['text/html']
+
 title = 'Jory Irving'
 
 enableEmoji = true
