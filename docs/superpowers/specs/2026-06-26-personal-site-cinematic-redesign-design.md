@@ -106,8 +106,7 @@ The PDF was out of date (listed Tempo as present). Corrected:
     backends from SQLite to Postgres and enabled Grafana high-availability mode.
   - Rolled out Gatus plus accompanying Prometheus alerts for endpoint monitoring and
     fast feedback to critical service teams.
-- **Tempo Software — DevOps/SRE, October 2022 – April 2025** (end date inferred from
-  StackAdapt start; confirm during resume review). No longer the current role.
+- **Tempo Software — DevOps/SRE, October 2022 – May 2025.** No longer the current role.
 
 Optional enrichment: if a role reads thin in the rendered resume, pull a couple more
 specifics from Jira/Slack via MCP, *targeted* at that role — not a broad data sweep.

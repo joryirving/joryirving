@@ -27,7 +27,7 @@ This is a static Hugo template/CSS site — there is **no unit-test framework**,
 - Dark theme, aligned with the existing `one_dark_pro` stats palette.
 - Aesthetic & sections are fixed by the spec: Hero, About, Skills, Homelab/Projects, Contact footer (landing); full themed resume at `/resume`.
 - Spec: `docs/superpowers/specs/2026-06-26-personal-site-cinematic-redesign-design.md`.
-- Resume content source of truth: `links/data/resume.yaml`. Current role is **StackAdapt — DevOps Engineer, May 2025–Present**; Tempo is past (**Oct 2022–April 2025**, end date inferred — flag at review).
+- Resume content source of truth: `links/data/resume.yaml`. Current role is **StackAdapt — DevOps Engineer, May 2025–Present**; Tempo is past (**Oct 2022 – May 2025**).
 - The public HTML resume **omits the phone number** (privacy); the PDF retains it.
 
 ---
@@ -162,7 +162,7 @@ Create `links/layouts/index.html`. Content is fully populated (no animation clas
         <p class="eyebrow" data-reveal>Site Reliability Engineer</p>
         <h1 class="hero__title" data-reveal style="--delay:.08s">Jory&nbsp;Irving</h1>
         <p class="hero__tagline" data-reveal style="--delay:.16s">
-          I turn pets into cattle and chaos into uptime.
+          Father · SRE/DevOps · gym rat · car nerd · general nerd.
         </p>
         <a class="scroll-cue" href="#about" aria-label="Scroll to content" data-reveal style="--delay:.28s">
           <span></span>
@@ -519,7 +519,7 @@ experience:
   - company: Tempo Software
     role: DevOps / SRE
     start: October 2022
-    end: April 2025   # end date inferred from StackAdapt start — confirm
+    end: May 2025
     highlights:
       - Managed multiple EKS clusters across regions, environments, and AWS accounts.
       - Managed AWS and Datadog via IaC and CI/CD pipelines; managed Kubernetes services via GitOps with ArgoCD.
@@ -709,7 +709,7 @@ Expected: `HTML OK`, `PDF OK`, a `StackAdapt` count > 0, a `Download PDF` count 
 
 - [ ] **Step 7: Visual check**
 
-`cd links && hugo server`, open `http://localhost:1313/resume`. Expected: themed dark resume — header with name/role, email + working "Download PDF" button (opens the PDF), summary, all experience entries (StackAdapt first as current, Tempo as April 2025), skills/languages columns, education. Click "Home" returns to `/`. Stop the server.
+`cd links && hugo server`, open `http://localhost:1313/resume`. Expected: themed dark resume — header with name/role, email + working "Download PDF" button (opens the PDF), summary, all experience entries (StackAdapt first as current, Tempo as Oct 2022 – May 2025), skills/languages columns, education. Click "Home" returns to `/`. Stop the server.
 
 - [ ] **Step 8: Commit**
 
