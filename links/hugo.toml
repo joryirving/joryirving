@@ -1,9 +1,7 @@
 baseURL = 'https://www.jory.dev/'
 languageCode = 'en-us'
 
-[author]
-  name = "Jory Irving"
-
+# Hugo 0.158+ blocks text/html content files by default; content/metrics.html needs this.
 [security]
   allowContent = ['text/html']
 
