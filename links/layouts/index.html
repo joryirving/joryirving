@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark" class="no-js">
+<head>
+<script>document.documentElement.classList.remove('no-js');</script>
+  {{ partial "site-head.html" . }}
+</head>
+<body>
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="eyebrow" data-reveal>Site Reliability Engineer</p>
+        <h1 class="hero__title" data-reveal style="--delay:.08s">Jory Irving</h1>
+        <p class="hero__tagline" data-reveal style="--delay:.16s">
+          Father · SRE/DevOps · gym rat · car nerd · general nerd.
+        </p>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to content" data-reveal style="--delay:.28s">
+          <span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--about">
+      <div class="wrap">
+        <h2 class="section__title" data-reveal>About</h2>
+        <p class="lede" data-reveal style="--delay:.06s">
+          A generalist IT professional and SRE/DevOps engineer with 15+ years across technology —
+          drawn to complex projects, exciting implementations, and constant improvement.
+        </p>
+        <p data-reveal style="--delay:.12s">
+          I practice strong DevOps fundamentals, pairing technical and analytical skill with a
+          sense of urgency to solve problems quickly in fast-paced environments. Quick to learn,
+          and happiest when the people around me are set up to do their best work too.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section--skills">
+      <div class="wrap">
+        <h2 class="section__title" data-reveal>Tech stack</h2>
+        <ul class="skills-grid">
+          {{ range $i, $s := slice "Kubernetes" "AWS" "Terraform" "ArgoCD / Flux" "Docker" "CI/CD" "GitOps" "Grafana" "Prometheus" "Linux" }}
+          <li class="skill" data-reveal style="--delay:{{ mul $i 0.05 }}s">{{ $s }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+
+    <!-- HOMELAB / PROJECTS -->
+    <section id="homelab" class="section section--homelab">
+      <div class="wrap">
+        <h2 class="section__title" data-reveal>Homelab &amp; projects</h2>
+        <div class="cards">
+          <a class="card card--feature" href="https://github.com/joryirving/home-ops" target="_blank" rel="noopener noreferrer" data-reveal>
+            <h3>home-ops</h3>
+            <p>A GitOps-managed Kubernetes homelab — my playground for the patterns I run in production: declarative infra, automated reconciliation, and observability from the ground up.</p>
+            <span class="card__cta">View on GitHub →</span>
+          </a>
+          <div class="card card--stats" data-reveal style="--delay:.08s">
+            <h3>GitHub activity</h3>
+            <img src="/metrics/heavy.svg" alt="GitHub metrics" loading="lazy" />
+            <a class="card__cta" href="/metrics">See full metrics →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <footer id="contact" class="section section--contact">
+      <div class="wrap">
+        <h2 class="section__title" data-reveal>Let's connect</h2>
+        <nav class="links" aria-label="Contact links" data-reveal style="--delay:.06s">
+          <a href="mailto:jory@jory.dev">Email</a>
+          <a href="https://www.linkedin.com/in/joryirving/" target="_blank" rel="me noopener noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/lildrunkensmurf/" target="_blank" rel="me noopener noreferrer">Instagram</a>
+          <a href="https://github.com/joryirving/home-ops" target="_blank" rel="me noopener noreferrer">Homelab</a>
+          <a href="/metrics">Metrics</a>
+          <a href="/resume">Resume</a>
+        </nav>
+        <p class="colophon">© {{ now.Year }} Jory Irving · Built with Hugo</p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

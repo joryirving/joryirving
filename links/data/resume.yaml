@@ -1,0 +1,87 @@
+name: Jory Irving
+title: SRE / DevOps Engineer
+email: jory@jory.dev
+pdf: /resume/cv.pdf
+summary: >-
+  A generalist IT professional and SRE/DevOps engineer with 15+ years across
+  technology, who enjoys complex projects, exciting implementations, and constant
+  improvement. I practice strong DevOps fundamentals — pairing technical and
+  analytical skill with a sense of urgency to solve problems quickly in fast-paced
+  settings — and I encourage the people around me to do their best work too.
+experience:
+  - company: StackAdapt
+    role: DevOps Engineer
+    start: May 2025
+    end: Present
+    highlights:
+      - Rolled out metadata-labelling standardization across Kubernetes infrastructure, enabling dynamic owner-based service alert routing.
+      - Improved Observability-stack reliability — migrated Grafana and Grafana OnCall backends from SQLite to Postgres and enabled Grafana high-availability mode.
+      - Rolled out Gatus plus accompanying Prometheus alerts for endpoint monitoring and fast feedback to critical service teams.
+  - company: Tempo Software
+    role: DevOps / SRE
+    start: October 2022
+    end: May 2025
+    highlights:
+      - Managed multiple EKS clusters across regions, environments, and AWS accounts.
+      - Managed AWS and Datadog via IaC and CI/CD pipelines; managed Kubernetes services via GitOps with ArgoCD.
+      - Modularized IaC to keep code DRY; rolled out new services including database backends with automatic provisioning.
+      - Reduced Datadog spend and optimized metric collection.
+  - company: Blacksquare.io
+    role: DevOps / SRE / Cloud Engineer
+    start: September 2021
+    end: October 2022
+    highlights:
+      - Managed multiple AWS accounts for various clients, products, and dev environments, with a mix of Terraform and CloudFormation.
+      - Containerized software on Fargate for high availability and automatic recovery/scaling; migrated infrastructure to reduce costs.
+      - Set up backups and PITR for databases; raised cloud security toward SOC 2 compliance.
+      - Owned RACI documentation and processes; set up monitoring to ensure uptime and reduce redundancy.
+  - company: ColdBore Technology
+    role: DevOps / SRE / Cloud Engineer
+    start: April 2021
+    end: August 2021
+    highlights:
+      - Built new technology to gather and format data from multiple sources.
+      - Implemented cost savings reducing a cloud environment's cost by 35%+; imported all infrastructure to code.
+      - Implemented SSO for internal users; migrated EC2-hosted Docker to Fargate and optimized images.
+  - company: Brightside by ATB
+    role: DevOps / SRE
+    start: May 2019
+    end: April 2021
+    highlights:
+      - Helped build a banking app — turned long-lived "pet" environments into scalable, dynamic "cattle" and migrated all infrastructure to code.
+      - Implemented zero-downtime deployments and cut deployment time by 50%+; integrated code scanning and quality analysis into builds.
+      - Provided 99.99% infrastructure uptime and earned glowing security and pen-test reports.
+  - company: Parkland Fuel
+    role: Desktop Solution Designer
+    start: February 2018
+    end: September 2018
+    highlights:
+      - Inventoried desktop fleet for an acquisition and produced procurement recommendations.
+      - Designed and ran a phased deployment schedule minimizing disruption, with a white-glove approach to affected users.
+  - company: Talisman Energy
+    role: Desktop Solutions — Infrastructure
+    start: September 2014
+    end: September 2017
+    highlights:
+      - Administered an MDM solution for 2000+ devices, including a tested DR failover solution.
+      - Migrated all users to a new MDM during the Repsol acquisition; packaged/deployed apps via SCCM 2012 to 4000+ PCs.
+skills:
+  - AWS
+  - CI/CD
+  - GitOps
+  - Flux / ArgoCD
+  - Terraform
+  - Kubernetes
+  - Docker
+  - Linux
+  - Windows
+  - Agile
+languages:
+  - English
+  - Basic French (read / spoken)
+education:
+  - school: Southern Alberta Institute of Technology
+    credential: Computer Engineering Technologist Diploma
+    start: Jan 2006
+    end: Dec 2007
+    notes: Calculus, Networking, Peripheral Systems, POSIX Operating Systems, Technical Communications, Microprocessor Architecture.

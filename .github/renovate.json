@@ -2,5 +2,15 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
       "local>joryirving/renovate-config"
+    ],
+    "customManagers": [
+      {
+        "customType": "regex",
+        "managerFilePatterns": ["/^\\.github/workflows/hugo\\.yml$/"],
+        "matchStrings": ["HUGO_VERSION:\\s*(?<currentValue>\\S+)"],
+        "datasourceTemplate": "github-releases",
+        "depNameTemplate": "gohugoio/hugo",
+        "extractVersionTemplate": "^v(?<version>.*)$"
+      }
     ]
   }

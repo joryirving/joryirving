@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark">
+<head>
+  {{ partial "site-head.html" . }}
+</head>
+<body class="resume">
+  {{ $r := hugo.Data.resume }}
+  <main class="wrap resume__main">
+    <header class="resume__header">
+      <a class="resume__back" href="/">← Home</a>
+      <h1>{{ $r.name }}</h1>
+      <p class="resume__role">{{ $r.title }}</p>
+      <p class="resume__contact">
+        <a href="mailto:{{ $r.email }}">{{ $r.email }}</a>
+        <a class="btn" href="{{ $r.pdf }}" target="_blank" rel="noopener">Download PDF ↓</a>
+      </p>
+      <p class="resume__summary">{{ $r.summary }}</p>
+    </header>
+
+    <section class="resume__section">
+      <h2>Experience</h2>
+      {{ range $r.experience }}
+      <article class="job">
+        <div class="job__head">
+          <h3>{{ .company }} <span class="job__role">— {{ .role }}</span></h3>
+          <span class="job__dates">{{ .start }} – {{ .end }}</span>
+        </div>
+        <ul>
+          {{ range .highlights }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </article>
+      {{ end }}
+    </section>
+
+    <div class="resume__cols">
+      <section class="resume__section">
+        <h2>Skills</h2>
+        <ul class="taglist">{{ range $r.skills }}<li>{{ . }}</li>{{ end }}</ul>
+      </section>
+      <section class="resume__section">
+        <h2>Languages</h2>
+        <ul class="taglist">{{ range $r.languages }}<li>{{ . }}</li>{{ end }}</ul>
+      </section>
+    </div>
+
+    <section class="resume__section">
+      <h2>Education</h2>
+      {{ range $r.education }}
+      <article class="job">
+        <div class="job__head">
+          <h3>{{ .school }} <span class="job__role">— {{ .credential }}</span></h3>
+          <span class="job__dates">{{ .start }} – {{ .end }}</span>
+        </div>
+        {{ with .notes }}<p class="edu__notes">{{ . }}</p>{{ end }}
+      </article>
+      {{ end }}
+    </section>
+  </main>
+</body>
+</html>

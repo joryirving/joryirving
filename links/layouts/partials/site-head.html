@@ -1,0 +1,20 @@
+{{- $css := resources.Get "css/site.css" | minify | fingerprint -}}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ .Site.Title }} — Site Reliability / DevOps Engineer." />
+<link rel="canonical" href="{{ .Permalink }}" />
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta property="og:title" content="{{ .Site.Title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{- if .IsHome -}}
+{{- $lenis := resources.Get "js/vendor/lenis.min.js" | fingerprint -}}
+{{- $main := resources.Get "js/main.js" | minify | fingerprint -}}
+<script src="{{ $lenis.RelPermalink }}" integrity="{{ $lenis.Data.Integrity }}" defer></script>
+<script src="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}" defer></script>
+{{- end -}}

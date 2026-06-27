@@ -1,0 +1,5 @@
+# Hugo build output / locks / cache
+links/public/
+links/resources/
+links/.hugo_build.lock
+.hugo_build.lock
