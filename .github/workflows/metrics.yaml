@@ -5,7 +5,6 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
-  push:
 
 jobs:
   github-metrics-light:
@@ -16,7 +15,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
 
           # Core
-          filename: metrics/light.svg
+          filename: links/static/metrics/light.svg
           config_timezone: America/Edmonton
           committer_message: "chore: update light metrics"
           
@@ -39,7 +38,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
 
           # Core
-          filename: metrics/heavy.svg
+          filename: links/static/metrics/heavy.svg
           config_timezone: America/Edmonton
           committer_message: "chore: update heavy metrics"
 
