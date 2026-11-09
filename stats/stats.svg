@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Jory Irving&#39;s GitHub Stats, Rank: A+</title>
-        <desc id="descId">Total Stars Earned: 249, Total Commits  (last year) : 7218, Total PRs: 2288, Total Issues: 1186, Contributed to (last year): 37</desc>
+        <desc id="descId">Total Stars Earned: 249, Total Commits  (last year) : 7197, Total PRs: 2292, Total Issues: 1191, Contributed to (last year): 37</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 17.044687094705118;
+        stroke-dashoffset: 17.044687099816723;
       }
     }
   
