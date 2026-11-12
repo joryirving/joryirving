@@ -138,7 +138,7 @@
           data-testid="lang-progress"
           x="0"
           y="0"
-          width="184.53"
+          width="184.29"
           height="8"
           fill="#cb171e"
         />
@@ -146,9 +146,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="184.53"
+          x="184.29"
           y="0"
-          width="40.08"
+          width="40.34"
           height="8"
           fill="#292929"
         />
@@ -156,9 +156,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="224.61"
+          x="224.63"
           y="0"
-          width="19.91"
+          width="19.9"
           height="8"
           fill="#3178c6"
         />
@@ -166,9 +166,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="234.52"
+          x="234.53"
           y="0"
-          width="16.22"
+          width="16.21"
           height="8"
           fill="#844FBA"
         />
@@ -178,7 +178,7 @@
           data-testid="lang-progress"
           x="240.74"
           y="0"
-          width="14.96"
+          width="14.95"
           height="8"
           fill="#083fa1"
         />
@@ -186,9 +186,9 @@
         <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="245.70000000000002"
+          x="245.69"
           y="0"
-          width="14.309999999999999"
+          width="14.3"
           height="8"
           fill="#00ADD8"
         />
@@ -199,14 +199,14 @@
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#cb171e" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        YAML 73.81%
+        YAML 73.71%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms">
       <circle cx="5" cy="6" r="5" fill="#292929" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        JSON 16.03%
+        JSON 16.14%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
