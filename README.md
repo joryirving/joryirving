@@ -15,3 +15,5 @@
 <p align="center">
   <img src="./stats/stats.svg" />
 </p>
+
+<!-- pr-reviewer operator pilot connectivity probe (test PR, safe to close) -->
